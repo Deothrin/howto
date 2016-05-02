@@ -12,7 +12,7 @@ entries for each of these. The first two I pointed to different document roots a
 The last virtualhost I configured with a ProxyPass from / to http://localhost:5984.
 
 I had trouble starting apache originally because something was using port 80 on the host. Tcpview helped me narrow it down to
-vboxheadless, most likely docker. Using docker-machine I shut down the vm and checked the network settings using vboxmanager. Sure
+vboxheadless, most likely docker. Using docker-machine I shut down the vm and checked the network settings using vboxmanage. Sure
 enough port 80 was mapped from guest to host for the NAT adapter. I don't remember doing this but maybe a docker command created
 this mapping at some point.
 
