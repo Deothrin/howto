@@ -10,3 +10,6 @@ on localhost only and instead to setup an apache server to proxy requests from t
 To make this work I set apache to listen on 127.0.0.1:80 and 192.168.56.1:80 as well as 192.168.56.1:5984 and created virtual host
 entries for each of these. The first two I pointed to different document roots and confirmed that they delivered different indexes. (This was just to test how ip based virtual hosts worked)
 The last virtualhost I configured with a ProxyPass from / to http://localhost:5984.
+
+The reason for all of this was the couchdb guide started showing post examples using json in curl which is no fun to enter on the windows
+command line. Much nicer to do that in bash in a vm. (Remember to check out bash on Windows, too)
