@@ -20,5 +20,5 @@ The reason for all of this was the couchdb guide started showing post examples u
 command line. Much nicer to do that in bash in a vm. (Remember to check out bash on Windows, too)
 
 One last step was to install apache on the ubuntu guest and ProxyPass requests to / onto http://192.168.56.1:5984/. Now I can just
-curl localhost/_all_dbs
+curl localhost/_all_dbs. Adding me to /etc/hosts we are now down to me/_all_dbs.
 
