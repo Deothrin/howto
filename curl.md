@@ -6,4 +6,4 @@
 
 ### Post a binary file
 
-  curl -X POST --data-binary -d @myfilename http://somewhere.com
+  curl -X POST --data-binary @myfilename http://somewhere.com
