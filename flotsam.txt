@@ -1,0 +1,1 @@
+certUtil -hashfile somefile.dat SHA1
